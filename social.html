@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaz Studio Social</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global Styles (Matches the aesthetic of index.html) */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Inter', 'Arial Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f7f6f2; 
+            color: #000;
+        }
+
+        .container {
+            max-width: 800px;
+            height: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top Navigation/Back Button */
+        .social-header {
+            display: flex;
+            justify-content: flex-end; /* Push the back button to the right */
+            padding: 20px 0;
+            margin-bottom: 50px;
+        }
+        
+        .social-header .back-link {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            font-weight: 900;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+        .social-header .back-link:hover {
+            opacity: 1;
+        }
+
+        /* Main Social Content */
+        .social-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .social-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-list li {
+            margin: 15px 0;
+        }
+
+        .social-list a {
+            text-decoration: none;
+            color: inherit;
+            /* Use a bold, but smaller font size than the main menu */
+            font-size: 4vw; /* Responsive font size */
+            font-weight: 900;
+            line-height: 1.2;
+            display: block;
+            letter-spacing: -0.02em;
+            transition: opacity 0.2s;
+        }
+        
+        /* Ensures the font size is capped on larger screens */
+        @media (min-width: 800px) {
+            .social-list a {
+                font-size: 32px;
+            }
+        }
+
+        .social-list a:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="social-header">
+            <a href="index.html" class="back-link">&larr; Back to Menu</a>
+        </header>
+        
+        <div class="social-content">
+            <ul class="social-list">
+                <li><a href="https://www.linkedin.com/in/sahil-mistry9" target="_blank">LINKEDIN</a></li>
+                <li><a href="https://www.behance.net/sahilmistry9" target="_blank">BEHANCE</a></li>
+                <li><a href="https://letterboxd.com/NotSahiL/" target="_blank">LETTERBOXD</a></li>
+                <li><a href="http://instagram.com/sxhilm" target="_blank">INSTAGRAM</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</body>
+</html>

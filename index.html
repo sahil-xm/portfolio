@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Mistry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* (CSS code for the menu container remains exactly the same as above) */
+        /* Reset basic styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Inter', 'Arial Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: 900;
+        }
+
+        body {
+            background-color: #f7f6f2; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000;
+        }
+
+        .menu-container {
+            width: 100%;
+            max-width: 1000px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 16px; 
+            font-weight: 900; 
+        }
+
+        .main-menu {
+            flex-grow: 1; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .main-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-menu li {
+            margin: 0; 
+        }
+
+        .main-menu a {
+            text-decoration: none;
+            color: inherit; 
+            font-size: 15vw; 
+            line-height: 0.95; 
+            font-weight: 900; 
+            display: block;
+            letter-spacing: -0.05em; 
+        }
+
+        @media (min-width: 1000px) {
+            .main-menu a {
+                font-size: 150px; 
+            }
+        }
+
+        .main-menu a:hover, .main-menu a:focus {
+            opacity: 0.7;
+        }
+
+        .footer-text {
+            text-align: center;
+            font-size: 10px; 
+            font-weight: 400; 
+            margin-top: auto; 
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <header class="header">
+            <span class="logo">SAHIL MISTRY.</span>
+        </header>
+
+        <nav class="main-menu">
+            <ul>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li> 
+        <li><a href="social.html">SOCIAL</a></li>
+    </ul>
+        </nav>
+
+        <footer class="footer-text">
+            APPRECIATING ART.
+        </footer>
+    </div>
+</body>
+</html>

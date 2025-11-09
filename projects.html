@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaz Studio Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', 'Arial Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f7f6f2; 
+            color: #000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Top Navigation/Back Button */
+        .projects-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #000;
+        }
+
+        .projects-header h1 {
+            font-size: 24px;
+            font-weight: 900;
+            margin: 0;
+        }
+        
+        .projects-header .back-link {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            font-weight: 900;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+        .projects-header .back-link:hover {
+            opacity: 1;
+        }
+
+        /* Project Grid Styling */
+        .project-grid {
+            display: grid;
+            /* Creates a responsive grid with a minimum column width of 300px */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .project-item {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+            opacity: 0.95;
+        }
+
+        .project-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+            /* Optional: Add a subtle border or shadow to frame the preview */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); 
+        }
+
+        .project-item h3 {
+            font-size: 20px;
+            font-weight: 900;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .project-item p {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 5px 0 0 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="projects-header">
+            <h1>PROJECTS / WORKS</h1>
+            <a href="index.html" class="back-link">&larr; Back to Menu</a>
+        </header>
+        
+        <div class="project-grid">
+            <a href="project-detail-1.html" class="project-item">
+                <img src="https://uploads.onecompiler.io/443xpwgr5/443xp658p/MAX-MOCK1.jpg" alt="Preview of Brand Identity Project">
+                <h3>Max Payne 2: Billboard Graphic</h3>
+                <p>Billboard/Digital Branding</p>
+            </a>
+            <a href="project-detail-2.html" class="project-item">
+                <img src="https://uploads.onecompiler.io/443xpwgr5/443xp658p/couldyou-mockup.jpg" alt="Preview of Website UI Project">
+                <h3>Silent Hill 2 Remake: Magazine Design</h3>
+                <p>Magazine Design</p>
+            </a>
+            <a href="project-detail-3.html" class="project-item">
+                <img src="https://uploads.onecompiler.io/443xpwgr5/443xp658p/darj-mockup.jpg" alt="Preview of Mobile App Design">
+                <h3>The Darjeeling Limited: CD/DVD Design</h3>
+                <p>Media Packaging Design</p>
+            </a>
+            <a href="https://uploads.onecompiler.io/443xpwgr5/443xp658p/NIETZSCHE.jpg" class="project-item">
+                <img src="https://uploads.onecompiler.io/443xpwgr5/443xp658p/NIETZSCHE.jpg" alt="Preview of Thumbnail Redesigns">
+                <h3>Horses(YT): Thumbnail Redesigns</h3>
+                <p>Communications & Thumbnail design</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
